@@ -1,0 +1,5 @@
+name: Cargo
+type: module
+description: A module for the Cargo Mobile App
+core: 8.x
+package: Custom

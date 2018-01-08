@@ -1,0 +1,5 @@
+name: Chaudfontaine
+type: module
+description: The original Chaudfontaine module!
+core: 8.x
+package: Custom

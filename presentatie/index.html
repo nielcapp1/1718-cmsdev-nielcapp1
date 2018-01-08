@@ -1,0 +1,230 @@
+<!doctype html>
+<html class="no-js" lang="nl" dir="ltr" prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+
+    <title>Presentatie - CMS Development</title>
+
+    <!-- prefetch dns -->
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+    <!-- reveal.js CSS-libraries -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/reveal.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/theme/black.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/lib/css/zenburn.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- My Own StyleSheets:  main.js -->
+		<link rel="stylesheet" href="./css/main.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/print/pdf.css' : 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+
+	<body>
+		<div class="reveal">   
+			<div class="slides">
+        <section>
+          <section>
+            <img class="logo" src="images/cargo.svg">
+          </section>  
+        </section>
+        <section>
+          <section>
+            <h1>Concept</h1>
+          </section>
+          <section>
+            <h2>Mobile Web App</h2>
+          </section>
+          <section>
+            <p>
+              <strong>Tesla garages</strong><br><br>verhuren wagens
+            </p>
+          </section>
+          <section>
+            <p>
+              <strong>Gebruikers</strong><br><br>huren wagens
+            </p>
+          </section>
+          <section>
+            <h2>Promo Website</h2>
+          </section>
+          <section>
+            <p>
+              <strong>Functie</strong><br><br>
+              Promotie voor de applicatie<br>Informatie aanbieden over de werking
+            </p>
+          </section>
+        </section>
+         <section>
+          <section>
+            <h1>Specificaties</h1>
+          </section>
+          <section>
+            <h2>Promo Website</h2>
+          </section>
+          <section>
+            <h3>Niet-functionele specificaties</h3>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">
+              De website bevat meerdere pagina’s in het CMS. De inhoud van deze pagina’s bestaat uit informatie en promotie voor de Mobile Web App.
+            </p>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">
+              Voor de backoffice doen we beroep op een standaard Drupal 8 Admin Theme. De frontoffice bestaat uit een zelfgemaakt Custom Theme.
+            </p>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">
+              Aan de hand van een RESTfull API kan de Mobile Web App beroep doen op informatie van het Content Management System.
+            </p>
+          </section>
+          <section>
+            <h3>Functionele specificaties</h3>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">Op de website worden de algemene voorwaarden geplaatst.</p>
+            <p class="fragment highlight-current-blue">Op de FAQ pagina kan je de volgende vragen raadplegen:</p>
+            <ul>
+              <li class="fragment highlight-current-blue">Hoe schade doorgeven?</li>
+              <li class="fragment highlight-current-blue">Hoe terugbrengen?</li>
+              <li class="fragment highlight-current-blue">Waar zijn er laadpunten te vinden?</li>
+            </ul>
+            <p class="fragment highlight-current-blue">De website bevat naast tekst ook foto’s.</p>
+          </section>
+          <section>
+            <h2>Mobile Web App</h2>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">Gebruiker</p>
+            <ul>
+              <li class="fragment highlight-current-blue">Registreren</li>
+              <li class="fragment highlight-current-blue">Aanmelden</li>
+              <li class="fragment highlight-current-blue">Profiel bekijken</li>
+              <li class="fragment highlight-current-blue">Profiel bewerken</li>
+              <li class="fragment highlight-current-blue">Afmelden bewerken</li>
+            </ul>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">Wegens</p>
+            <ul>
+              <li class="fragment highlight-current-blue">Lijst met wagens</li>
+              <li class="fragment highlight-current-blue">Detailpagina met specificaties</li>
+              <li class="fragment highlight-current-blue">Huren -> Contract maken</li>
+            </ul>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">Contracten</p>
+            <ul>
+              <li class="fragment highlight-current-blue">Lijst met contracten</li>
+              <li class="fragment highlight-current-blue">Detailpagina van contract</li>
+              <li class="fragment highlight-current-blue">Contract verlengen</li>
+              <li class="fragment highlight-current-blue">Contract stopzetten</li>
+            </ul>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">Reviews</p>
+            <ul>
+              <li class="fragment highlight-current-blue">Lijst met reviews</li>
+              <li class="fragment highlight-current-blue">Review plaatse</li>
+              <li class="fragment highlight-current-blue">Review bewerken</li>
+              <li class="fragment highlight-current-blue">Review verwijderen</li>
+            </ul>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">De specificaties van het voertuig:</p>
+            <ul>
+              <li class="fragment highlight-current-blue">Het type voertuig</li>
+              <li class="fragment highlight-current-blue">Het aantal zitplaatsen</li>
+              <li class="fragment highlight-current-blue">Voorwaarden voor het gebruik: Rijbewijs</li>
+              <li class="fragment highlight-current-blue">De prijs of kosten voor het huren van het voertuig</li>
+              <li class="fragment highlight-current-blue">De eigenaar</li>
+            </ul>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">De toestand van het voertuig:</p>
+            <ul>
+              <li class="fragment highlight-current-blue">De locatie waar je het voertuig kan ophalen</li>
+              <li class="fragment highlight-current-blue">De beschikbaarheid van het voertuig</li>
+            </ul>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">Module: Cargo</p>
+            <ul>
+              <li class="fragment highlight-current-blue">Entity: Vehicles</li>
+              <li class="fragment highlight-current-blue">Entity: Reviews</li>
+              <li class="fragment highlight-current-blue">Entity: Contracts</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Keuze van technologie</h1>
+          </section>
+          <section>
+            <h2>Promo Website</h2>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">PHP 7.1</p>
+            <p class="fragment highlight-current-blue">MySQL</p>
+            <p class="fragment highlight-current-blue">Drupal 8.4</p>
+            <p class="fragment highlight-current-blue">Drupal RESTfull Web Services API</p>
+            <p class="fragment highlight-current-blue">Twig templating engine</p>
+            <p class="fragment highlight-current-blue">Bootstrap 4</p>
+          </section>
+          <section>
+            <h2>Mobile Web App</h2>
+          </section>
+          <section>
+            <p class="fragment highlight-current-blue">npm</p>
+            <p class="fragment highlight-current-blue">Vue + Vue Router</p>
+            <p class="fragment highlight-current-blue">Axios</p>
+            <p class="fragment highlight-current-blue">ES6</p>
+            <p class="fragment highlight-current-blue">Sass</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Sitemap Promo Website</h1>
+          </section>
+          <section>
+            <img class="sitemap" src="images/sitemap.svg">
+          </section>
+        </section>
+        <section>
+          <section>
+          <h1>Wireflow Mobile App</h1>
+          </section>
+          <section>
+            <img class="sitemap" src="images/WireflowCMSDEV-Wireframes.jpg">
+          </section>
+        </section>  
+        <section>
+          <section>
+            <h1>Live demo</h1>
+          </section>
+        </section>
+			</div>
+		</div>
+
+    <!-- reveal.js JS-libraries -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/lib/js/head.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/js/reveal.min.js"></script>
+
+    <!-- My Own Scripts: Main Script -->
+    <script src="js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,27 @@
+{% extends 'layout.twig' %}
+
+{% block title %}
+    {{ pageData.title }}
+{% endblock %}
+
+{% block article %}
+    <div class="appstore-banner">
+        <img src="/assets/images/iphone8.jpg"/>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% for appStore in appStores %}
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 appstore-block">
+                    <h2 class="appstore-title">{{ appStore.title }}</h2>
+                    <p class="appstore-text">{{ appStore.description }}</p>
+                    <a class="appstore-button" href="#">
+                        <img src="/assets/images/{{appStore.imageUrl}}"/>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
+
+

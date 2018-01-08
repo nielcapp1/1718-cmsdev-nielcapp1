@@ -1,0 +1,168 @@
+@media screen and (max-width: 768px) {
+    .experience-block:nth-child(even) {
+        width: 100%;
+        height: auto;
+        position: static !important;
+        .experience-title {
+            margin-top: 50px;
+            width: 100% !important;
+            position: static !important;
+            height: auto;
+            float: left;
+            h2 {
+                color: $black;
+                font-size: 20px;
+                font-weight: 800;
+                padding-left: 20px !important;
+            }
+        }
+        .experience-body {
+            width: 100% !important;
+            position: static !important;
+            margin-top: 10px;
+            height: auto;
+            float: left;
+            p {
+                color: $black;
+                font-size: 12px;
+                margin-bottom: 10px;
+                padding-left: 20px !important;
+            }
+        }
+        .experience-image {
+            width: 100% !important;
+            position: static !important;
+            float: left;
+            margin-top: 50px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .experience-block:nth-child(odd) {
+        width: 100%;
+        height: auto;
+        position: static !important;
+        .experience-title {
+            margin-top: 50px;
+            width: 100% !important;
+            position: static !important;
+            height: auto;
+            float: left;
+            h2 {
+                color: $black;
+                font-size: 20px;
+                font-weight: 800;
+                padding-left: 20px !important;
+            }
+        }
+        .experience-body {
+            width: 100% !important;
+            position: static !important;
+            margin-top: 10px;
+            height: auto;
+            float: left;
+            p {
+                color: $black;
+                font-size: 12px;
+                margin-bottom: 10px;
+                padding-left: 20px !important;
+            }
+        }
+        .experience-image {
+            width: 100% !important;
+            position: static !important;
+            float: left;
+            margin-top: 50px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.experience-block:nth-child(even) {
+    position: relative;
+    width: 100%;
+    height: auto;
+    .experience-title {
+        position: absolute;
+        top: 50px;
+        width: 50%;
+        h2 {
+            color: $black;
+            font-size: 20px;
+            font-weight: 800;
+            padding-left: 30px;
+            padding-right: 30px; 
+        }
+    }
+    .experience-body {
+        width: 50%;
+        position: absolute;
+        top: 80px;
+        p {
+            color: $black;
+            font-size: 12px;
+            margin-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    .experience-image {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%; 
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.experience-block:nth-child(odd) {
+    position: relative;
+    width: 100%;
+    height: auto;
+    .experience-title {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 50%;
+        h2 {
+            color: $black;
+            font-size: 20px;
+            font-weight: 800;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    .experience-body {
+        width: 50%;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        p {
+            padding-left: 50px;
+            color: $black;
+            font-size: 12px;
+            margin-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    .experience-image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%; 
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains cargo.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cargo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cargo module.
+    case 'help.page.cargo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('A module for the Cargo Mobile App') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cargo_theme() {
+  return [
+    'cargo' => [
+      'render element' => 'children',
+    ],
+  ];
+}
