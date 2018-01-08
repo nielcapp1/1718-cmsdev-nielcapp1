@@ -1,0 +1,16 @@
+name: cargo_theme
+description: Drupal 8 Starter Theme
+type: theme
+core: 8.x
+libraries:
+  - cargo_theme/global-css
+  - cargo_theme/global-js
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/components/align.module.css
+
+regions:
+  header: Header
+  subheader: Subheader
+  content: Content
+  footer: Footer

@@ -1,0 +1,15 @@
+entity.vehicles.add_form:
+  route_name: entity.vehicles.add_form
+  title: 'Add Vehicles'
+  appears_on:
+    - entity.vehicles.collection
+entity.contracts.add_form:
+  route_name: entity.contracts.add_form
+  title: 'Add Contracts'
+  appears_on:
+    - entity.contracts.collection
+entity.reviews.add_form:
+  route_name: entity.reviews.add_form
+  title: 'Add Reviews'
+  appears_on:
+    - entity.reviews.collection

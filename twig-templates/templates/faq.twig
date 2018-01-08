@@ -1,0 +1,18 @@
+{% extends 'layout.twig' %}
+
+{% block title %}
+    {{ pageData.title }}
+{% endblock %}
+
+{% block article %}
+    <div class="container">
+        <div class="row">
+            {% for faq in faqs %}
+                <div class="col-12 terms-block">
+                    <h2 class="terms-title">{{ faq.question }}</h2>
+                    <p class="terms-text">{{ faq.answer }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

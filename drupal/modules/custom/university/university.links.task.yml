@@ -1,0 +1,108 @@
+# Course routing definition
+course.settings_tab:
+  route_name: course.settings
+  title: 'Settings'
+  base_route: course.settings
+
+entity.course.canonical:
+  route_name: entity.course.canonical
+  base_route: entity.course.canonical
+  title: 'View'
+
+entity.course.edit_form:
+  route_name: entity.course.edit_form
+  base_route: entity.course.canonical
+  title: 'Edit'
+
+entity.course.version_history:
+  route_name: entity.course.version_history
+  base_route: entity.course.canonical
+  title: 'Revisions'
+
+entity.course.delete_form:
+  route_name:  entity.course.delete_form
+  base_route:  entity.course.canonical
+  title: Delete
+  weight: 10
+
+# Student routing definition
+student.settings_tab:
+  route_name: student.settings
+  title: 'Settings'
+  base_route: student.settings
+
+entity.student.canonical:
+  route_name: entity.student.canonical
+  base_route: entity.student.canonical
+  title: 'View'
+
+entity.student.edit_form:
+  route_name: entity.student.edit_form
+  base_route: entity.student.canonical
+  title: 'Edit'
+
+entity.student.version_history:
+  route_name: entity.student.version_history
+  base_route: entity.student.canonical
+  title: 'Revisions'
+
+entity.student.delete_form:
+  route_name:  entity.student.delete_form
+  base_route:  entity.student.canonical
+  title: Delete
+  weight: 10
+
+# Institution routing definition
+institution.settings_tab:
+  route_name: institution.settings
+  title: 'Settings'
+  base_route: institution.settings
+
+entity.institution.canonical:
+  route_name: entity.institution.canonical
+  base_route: entity.institution.canonical
+  title: 'View'
+
+entity.institution.edit_form:
+  route_name: entity.institution.edit_form
+  base_route: entity.institution.canonical
+  title: 'Edit'
+
+entity.institution.version_history:
+  route_name: entity.institution.version_history
+  base_route: entity.institution.canonical
+  title: 'Revisions'
+
+entity.institution.delete_form:
+  route_name:  entity.institution.delete_form
+  base_route:  entity.institution.canonical
+  title: Delete
+  weight: 10
+
+# Instructor routing definition
+instructor.settings_tab:
+  route_name: instructor.settings
+  title: 'Settings'
+  base_route: instructor.settings
+
+entity.instructor.canonical:
+  route_name: entity.instructor.canonical
+  base_route: entity.instructor.canonical
+  title: 'View'
+
+entity.instructor.edit_form:
+  route_name: entity.instructor.edit_form
+  base_route: entity.instructor.canonical
+  title: 'Edit'
+
+entity.instructor.version_history:
+  route_name: entity.instructor.version_history
+  base_route: entity.instructor.canonical
+  title: 'Revisions'
+
+entity.instructor.delete_form:
+  route_name:  entity.instructor.delete_form
+  base_route:  entity.instructor.canonical
+  title: Delete
+  weight: 10
+

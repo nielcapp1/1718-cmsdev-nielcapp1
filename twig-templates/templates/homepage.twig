@@ -1,0 +1,33 @@
+{% extends 'layout.twig' %}
+
+{% block title %}
+    {{ pageData.title }}
+{% endblock %}
+
+{% block article %}
+    <div class="row">
+        {% for infoblock in infoblocks %}
+            {% if loop.index0 is even %}
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 infoblock">
+                    <h2 class="infoblock-title">{{ infoblock.title }}</h2>
+                    <p class="infoblock-text">{{ infoblock.description }}</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 infoblock infoblock-image">
+                    <img src="/assets/images/{{ infoblock.imageUrl }}">
+                </div>
+            {% endif %}
+            {% if loop.index0 is odd %}
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 infoblock infoblock-image">
+                    <img src="/assets/images/{{ infoblock.imageUrl }}">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 infoblock">
+                    <h2 class="infoblock-title">{{ infoblock.title }}</h2>
+                    <p class="infoblock-text">{{ infoblock.description }}</p>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}
+
+
+

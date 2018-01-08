@@ -1,0 +1,92 @@
+@media screen and (max-width: 768px) {
+    .cars-block {
+        width: 100%;
+        height: auto;
+        position: static !important;
+        .cars-title {
+            margin-top: 50px;
+            margin-bottom: 10px;
+            width: 100% !important;
+            position: static !important;
+            height: auto;
+            float: left;
+        }
+        .cars-description {
+            width: 100% !important;
+            position: static !important;
+            margin-top: 10px;
+            height: auto;
+            float: left;
+            p {
+                color: $black;
+                font-size: 12px;
+                margin-bottom: 10px;
+                padding-left: 30px !important;
+            }
+        }
+        .cars-image {
+            width: 100% !important;
+            position: static !important;
+            float: left;
+            margin-top: 50px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.cars-block {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    .cars-title {
+        position: absolute;
+        top: 50px;
+        width: 50%;
+        h2 {
+            color: $white;
+            font-size: 20px;
+            font-weight: 800;
+            padding-left: 20px !important;
+        }
+        a {
+            text-decoration: none;
+            color: $white;
+            background-color: $black;
+            padding: 5px 10px;
+            margin-left: 10px;
+        }
+        a:hover {
+            text-decoration: none;
+            color: $black;
+            background-color: $white;
+            padding: 5px 10px;
+            margin-left: 10px;
+        }
+    }
+    .cars-description {
+        width: 50%;
+        position: absolute;
+        top: 90px;
+        p {
+            color: $black;
+            font-size: 12px;
+            margin-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    .cars-image {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%; 
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
