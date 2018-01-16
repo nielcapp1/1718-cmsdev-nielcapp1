@@ -1,2 +1,0 @@
-
-Bootstrapper._serverTime = '2017-12-10 14:46:24'; Bootstrapper._clientIP = '0.0.0.0'; var psj0 = 'https://nexus.ensighten.com/hearst/caranddriver/code/75d41051839ec8bf4bcfc1917666693e.js?conditionId0=422740';Bootstrapper.insertScript(psj0);var psj1 = 'https://nexus.ensighten.com/hearst/caranddriver/code/18eb52cfcd508e4ed32bc63d123ee40f.js?conditionId0=256199';Bootstrapper.loadScriptCallback(psj1, Bootstrapper.callOnPageSpecificCompletion);Bootstrapper.setPageSpecificDataDefinitionIds([])

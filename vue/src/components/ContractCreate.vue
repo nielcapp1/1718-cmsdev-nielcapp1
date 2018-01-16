@@ -72,31 +72,34 @@ export default {
       errors: []
     }
   },
-  created: function(){
-    
-  },
   mounted: function () {
     this.checkIfAuthenticated();
   },
   computed: {
     calculatePrice: function () {
+
         // Replace '-' with '/'.
         let replacedEndDate = this.endDate.replace(/-/g , "/");
         let replacedStartDate = this.startDate.replace(/-/g , "/");
+
         // Convert dates to a usefull string.
         let convertEndDate = replacedEndDate.substring(0,10)+' '+replacedEndDate.substring(11);
         let convertStartDate = replacedStartDate.substring(0,10)+' '+replacedStartDate.substring(11);
+        
         // Convert string to a date.
         let endDate = new Date (convertEndDate);
         let startDate = new Date (convertStartDate);
+        
         // Get the current date
         let nowDate = new Date()
+        
         // Stardate is in the past? ...
         if (startDate <= nowDate) {
           this.errorMessage = "De start datum ligt in het verleden."
           this.totalPrice = ''
           return this.totalPrice;
         }
+        
         //  End Date is before the Start Date? ...
         else if (startDate > endDate) {
           this.errorMessage = "Het startuur is later gepland dan het einduur. Gelieve dit te wijzigen."
@@ -104,20 +107,26 @@ export default {
           return this.totalPrice;
         } 
         else {
+          
           // Make the Error Message empty.
           this.errorMessage = ""
+          
           // Calculate the Minutes.
           let minutes = endDate - startDate;
+          
           // Calculate the Total Hours based on the Minutes.
           let totalHours = (minutes/1000)/60/60;
+          
           // Calculate the Total Price based on the Price Per Hour and the Total Hours.
           // Round the Total Price.
           this.totalPrice = Math.round(this.vehicle.field_price_per_hour[0].value * totalHours)
+          
           // Total Price is not a Number? ...
           if (isNaN(this.totalPrice)) {
             this.totalPrice = ''
             return this.totalPrice;
           }
+          
           // Total Price is a Number? ...
           else {
             if (this.totalPrice === 0) {

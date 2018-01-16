@@ -1,0 +1,26 @@
+form {
+    label {
+        color: $black;
+        margin-left: 10px;
+        font-weight: 800;
+    }
+    input {
+        border: none;
+        box-shadow: 0px 0px 1px 0px $black;
+        background-color: $white;
+        height: 30px;
+        color: $black;
+        padding: 0px 10px;
+        font-weight: 800;
+        border-radius: 50px;
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+        margin: 5px 0px;
+    }
+    .description {
+        margin-left: 10px;
+        color: $red;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+}

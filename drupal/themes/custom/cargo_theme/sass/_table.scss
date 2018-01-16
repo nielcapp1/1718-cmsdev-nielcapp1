@@ -1,0 +1,61 @@
+#create-button {
+    background-color: $white;
+    color: $black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 1px 0px $black;
+}
+
+table {
+    margin-top: 40px;
+    width: 100%;
+    thead {
+        color: $black;
+        border-bottom: 3px solid $black;
+        font-weight: 800;
+        tr {
+            th {
+                width: 100px;
+                text-align: left;
+                padding: 10px;
+            }
+        }
+    }
+    tbody {
+        background-color: $white;
+        color: $black;
+        tr {
+            td {
+                width: 100px;
+                text-align: left;
+                padding: 10px;
+                .dropbutton-wrapper {
+                    padding-top: 8px;
+                    .dropbutton-widget {
+                        background-color: $white;
+                        padding-bottom: 5px;
+                        padding-top: 5px;
+                        border-radius: 5%;
+                        box-shadow: 0px 0px 1px 0px $black
+                    }
+                    a {
+                        color: $black;
+                        text-decoration: none;
+                        padding-top: 5px;
+                        padding-left: 10px;
+                        padding-bottom: 5px;
+                    }
+                }
+                .dropbutton-wrapper .open{
+                    padding-top: 18px;
+                    background-color: red;
+                }
+                a {
+                    color: $black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

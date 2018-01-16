@@ -39,6 +39,17 @@
  * @see template_preprocess_table()
  */
 #}
+
+
+
+
+<a id="create-button" href>Create</a>
+
+<script>
+  var a = document.getElementById('create-button'); //or grab it by tagname etc
+  a.href = document.URL + '/add';
+</script>
+
 <table{{ attributes }}>
   {% if caption %}
     <caption>{{ caption }}</caption>
